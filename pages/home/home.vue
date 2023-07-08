@@ -12,17 +12,15 @@
 					<image :src="item.image_src" ></image>
 			</view>
 		</view>
-		<tablist></tablist>
+		<tab-list></tab-list>
 	</view>
 	
 </template>
 
 <script>
-	import tablist from "../../components/tab-list/tab-list.vue"
+
 	export default {
-		components:{
-			tablist:tablist
-		},
+	
 	data(){
 		return{
 			swiperList:[],

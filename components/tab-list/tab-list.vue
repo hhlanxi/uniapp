@@ -1,25 +1,28 @@
 <template>
-	<view class="tab-list" v-for="(item,index) in gloorData" :key="index">
-		
-		<view class="tab-top">
-			<image :src="item.floor_title.image_src"></image>
-		</view>
-		<view class="tab-bottom">
-			<view class="left">
-				<navigator :url="item.product_list[0].url">
-					<image :src="item.product_list[0].image_src" ></image>
-				</navigator>
+	<view>
+		<view class="tab-list" v-for="(item,index) in gloorData" :key="index">
+			
+			<view class="tab-top">
+				<image :src="item.floor_title.image_src"></image>
 			</view>
-			<view class="right">
-				<view class="container-nav" v-for="(item,index) in item.product_list" :key="index"   v-if="index !=0" >
-					<navigator :url="item.url" >
-						<image  :src="item.image_src" ></image>
+			<view class="tab-bottom">
+				<view class="left">
+					<navigator :url="item.product_list[0].url">
+						<image :src="item.product_list[0].image_src" ></image>
 					</navigator>
 				</view>
-				
+				<view class="right">
+					<view class="container-nav" v-for="(item,index) in item.product_list" :key="index"   v-if="index !=0" >
+						<navigator :url="item.url" >
+							<image  :src="item.image_src" ></image>
+						</navigator>
+					</view>
+					
+				</view>
 			</view>
 		</view>
 	</view>
+	
 </template>
 
 <script>

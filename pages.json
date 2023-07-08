@@ -1,36 +1,17 @@
 {
 	"pages": [{
-            "path" : "pages/home/home",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
+            "path" : "pages/home/home"
+        }
+        ,{
+            "path" : "pages/cate/cate"
             
         }
         ,{
-            "path" : "pages/cate/cate",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
+            "path" : "pages/cart/cart"
             
-        }
-        ,{
-            "path" : "pages/cart/cart",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
         },{
-            "path" : "pages/my/my",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
+            "path" : "pages/my/my"
+           
         }
     ],
 	"globalStyle": {
@@ -38,7 +19,7 @@
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#2b4b6b",
 		"app-plus": {
-			"background": "#efeff4"
+			"titleNView": false
 		}
 	},
 	"tabBar": {
@@ -80,6 +61,15 @@
                 }
                 ,{
                     "path" : "goods_list/goods_list",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "search/search",
                     "style" :                                                                                    
                 {
                     "navigationBarTitleText": "",
