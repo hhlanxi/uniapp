@@ -34,6 +34,7 @@
 	},
 		
 	methods:{
+	//请求轮播图
 	async getSwiperList(){
 			const {data:res}= await uni.$http.get('/api/public/v1/home/swiperdata')
 			
@@ -44,6 +45,7 @@
 				uni.$showMsg()
 			}
 		}	,
+		//请求导航栏
 		async getNavList(){
 			const {data:res}= await uni.$http.get('/api/public/v1/home/catitems')
 			if(res.meta.status === 200){
@@ -53,6 +55,7 @@
 				uni.$showMsg()
 			}
 	},
+	
 	goNavigator(item){
 		switch(item.name){
 			case '分类': uni.switchTab({
